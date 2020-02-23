@@ -20,8 +20,15 @@ The IP core is configured to receive and produce data in AXI Stream format.
 * (optional) Add the top file top.cpp 
 * Leave the period as 10 ns, enter 2 as uncertainty and select xczu3eg-sfvc784-1-e as part
 * Click Finish
-* In the Explorer panel, right click on 'Source' and select 'New File'. Name it top.cpp
-* Right click on 'Test Bench' and select 'New File'. Name it test.cpp
+* In the Explorer panel, right click on 'Source' and select 'New File'. Name it convolve.cpp
+* Right click on 'Test Bench' and select 'New File'. Name it testbench.cpp
+* Copy the contents of convolve.cpp in this repository into your convolve.cpp
+* Do the same with testbench.cpp
+* Run 'C Synthesis'. The process should end without errors and show a report
+* Run 'Run C Simulation'. The process should end without error and printing the results of the test
+* Run 'Export RTL'. Select Format: IP Catalog and tick Vivado Synthesis. click OK.
+* The IP core will be generated in solution1/impl/ip
+
 
 
 
