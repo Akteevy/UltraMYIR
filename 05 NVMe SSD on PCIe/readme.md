@@ -15,3 +15,6 @@ The Ultramyir board by MYIR has a Zynq Ultrascale+ MPSoC with a PCIe slot. In th
 * Create a petalinux project sourcing that BSP
 * Create the boot image
 
+## Tutorial
+
+Follow the directions in the pdf document to build this project from scratch
