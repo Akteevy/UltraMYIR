@@ -20,7 +20,7 @@ These tutorials are developed on a Linux virtual machine with Ubuntu 20.04.1 and
 		</tr>
 		<tr>
 			<td >
-				<a href="https://github.com/Akteevy/UltraMYIR/07 Vitis accelerated flow tutorial/07 step 1">Platform creation with Vivado</a>
+				<a href="https://github.com/Akteevy/UltraMYIR/07 Vitis accelerated flow tutorial/07 step 1/">Platform creation with Vivado</a>
 			</td>
 			<td >
 				This repository illustrates how to create a Vivado platform to be used with the Vitis Accelerated flow for the MYIR MYD-CZU3EG board.
@@ -28,7 +28,7 @@ These tutorials are developed on a Linux virtual machine with Ubuntu 20.04.1 and
 		</tr>
 		<tr>
 			<td >
-				<a href="https://github.com/Akteevy/UltraMYIR/07 Vitis accelerated flow tutorial/07 step 2">Petalinux creation</a>
+				<a href="https://github.com/Akteevy/UltraMYIR/07 Vitis accelerated flow tutorial/07 step 2/">Petalinux creation</a>
 			</td>
 			<td >
 				The repository helps shows how to configure and build Petalinux using the previously generated platform and configure it for Vitis accelerated flow.
@@ -36,7 +36,7 @@ These tutorials are developed on a Linux virtual machine with Ubuntu 20.04.1 and
 		</tr>
 		<tr>
 			<td >
-				<a href="https://github.com/Akteevy/UltraMYIR/07 Vitis accelerated flow tutorial/07 step 3">Vitis platform and application</a>
+				<a href="https://github.com/Akteevy/UltraMYIR/07 Vitis accelerated flow tutorial/07 step 3/">Vitis platform and application</a>
 			</td>
 			<td >
 				In this last step you will see how the previous objects are put together in the Vitis accelerated flow and an accelrated example application is built and run.
