@@ -67,4 +67,38 @@ Let's start.
     
     ![missing image](images/01_048.png)
     
+    Click **OK**. Then add the following IPs:
+    
+    - Clocking wizard. Configure it for three outputs at 100, 200 and 400 MHz. Change the reset input to active low. Leave the locked output.
+    - Concat. Change it to one input port.
+    - Processor System Reset (x 3)
+
+    Connect them as shown below.
+    
+    ![missing image](images/01_050.png)
+    
+    Next is to configure the platform. In the **Platform Setup** tab in the block diagram, select the AXI ports as in the picture. Type names for the slave ports.
+    
+    ![missing image](images/01_060.png)
+    
+    Now select all three clocks from the wizard to be used by vitis and select the 200 MHz clock as default.
+    
+    ![missing image](images/01_070.png)
+    
+    Select interrupts 0 to 7 and enable them to be used by Vitis.
+    
+    ![missing image](images/01_080.png)
+    
+    Finally add the platform details.
+    
+    ![missing image](images/01_090.png)
+    
+    Now save the platform and click on **Generate Block Design** on the Flow Navigator. Select **Global** as Synthesis option and click **Generate**
+    
+    ![missing image](images/01_100.png)
+    
+    Once it's done, right click on the block diagram icon in the Sources panel and select **Create HDL wrapper**
+    
+    ![missing image](images/01_105.png)
+    
     
