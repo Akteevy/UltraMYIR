@@ -97,8 +97,24 @@ Let's start.
     
     ![missing image](images/01_100.png)
     
-    Once it's done, right click on the block diagram icon in the Sources panel and select **Create HDL wrapper**
+    Once it's done, right click on the block diagram icon in the Sources panel and select **Create HDL wrapper**. Select the option **Let Vivado manage wrapper and auto-update** and click **OK**.
     
     ![missing image](images/01_105.png)
     
+    Now click on **Generate Bitstream** on the Flow Navigator panel.
     
+    When the bitstream is created, click on **Export Platform** and select the **Hardware** option.
+    
+    ![missing image](images/01_110.png)
+    
+    Next, select the **Pre-Synthesis** platform state and make sure the **Include bitstream** box is ticked.
+    
+    ![missing image](images/01_120.png)
+    
+    Next, review the platform details, name, version, etc.
+    
+    ![missing image](images/01_130.png)
+    
+    Now choose a name and directory for the XSA file to create. Here I chose **myir_platform** and the ~/workspace/vivado/myir folder
+    
+    ![missing image](images/01_140.png)
