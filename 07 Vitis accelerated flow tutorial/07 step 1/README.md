@@ -123,4 +123,4 @@ Let's start.
     
     ![missing image](images/01_150.png)
     
-We have now completed the first step. Copy the myir_platform.xsa file to the workspace/petalinux folder to use it in [step 2](../07 step 2/)
+We have now completed the first step. Copy the myir_platform.xsa file to the workspace/petalinux folder to use it in <a href="https://github.com/Akteevy/UltraMYIR/tree/master/07 Vitis accelerated flow tutorial/07 step 2/">step 2</a>
