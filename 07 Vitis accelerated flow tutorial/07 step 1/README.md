@@ -118,3 +118,9 @@ Let's start.
     Now choose a name and directory for the XSA file to create. Here I chose **myir_platform** and the ~/workspace/vivado/myir folder
     
     ![missing image](images/01_140.png)
+
+    Click **Finish**. After it's done, the XSA file will appear in the myir project folder.
+    
+    ![missing image](images/01_150.png)
+    
+We have now completed the first step. Copy the myir_platform.xsa file to the workspace/petalinux folder to use it in [step 2](../07 step 2/)
