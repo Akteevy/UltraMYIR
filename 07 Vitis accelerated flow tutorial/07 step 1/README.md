@@ -42,5 +42,13 @@ Let's start.
     Click **Finish**. A new blank project should be created.
 
 2. Create and populate the block diagram
-
+    
+    In Vivado Flow Navigator, click on **Create Block Design** and name it **bd** 
+    
+    ![missing image](images/01_040.png)
+    
+    In the created block diagram, click on the plus sign and add a 
+    
+    ![missing image](images/01_041.png)
+    
     
