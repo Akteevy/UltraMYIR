@@ -25,9 +25,15 @@ Copy the following files from `~/workspace/petalinux/myir/images/linux` into `~/
 * u-boot-dtb.elf
 * zynqmp_fsbl.elf
 
-Rename `u-boot-dtb.elf` to `u-boot.elf`
+Rename `u-boot-dtb.elf` to `u-boot.elf` so it will end up like this.
 
 ![missing file](images/03_010.png)
+
+Copy the following files from `~/workspace/petalinux/myir/images/linux` into `~/workspace/vitis/sd_card`:
+* boot.scr
+* image.ub
+
+![missing file](images/03_020.png)
 
 ### Launching Vitis
 Start Vitis either with the desktop shortcut or via the terminal.
