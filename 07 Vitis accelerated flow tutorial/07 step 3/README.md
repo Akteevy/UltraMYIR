@@ -35,5 +35,33 @@ Copy the following files from `~/workspace/petalinux/myir/images/linux` into `~/
 
 ![missing file](images/03_020.png)
 
-### Launching Vitis
+### Creating the Vitis platform
 Start Vitis either with the desktop shortcut or via the terminal.
+Click on **File->New->Platform** and enter the name for the platform, I chose myir_plat.
+
+![missing file](images/03_030.png)
+
+Next, browse for the XSA file, navigate to the `~/workspace/vivado/myir` folder and select it.
+
+![missing file](images/03_040.png)
+
+Next change the operating system to Linux, leave the other options and untick the boot file generation as we already have them created with Petalinux
+
+![missing file](images/03_050.png)
+
+In the platform settings the paths for the FSBL and PMU fw need to be entered, use those in the `vitis\boot` folder where we copied them from the Petalinux project.
+
+![missing file](images/03_060.png)
+
+Next the linux domain has to be configured as follows:
+- For the **bif file**, click on the arrow and select **Generate bif file**
+- For the **boot components directory**, select the `vitis/boot` folder created
+- For the **linux rootfs**, browse to the `rootfs.ext4` file in the `images/linux` folder in the petalinux project
+- For the **FAT32 partition directory**, select the sd_card folder we created
+- For the **Sysroot directory**, select the `~/workspace/vitis/boot/sdk/sysroots/cortexa72-cortexa53-xilinx-linux` folder
+
+
+
+
+
+
