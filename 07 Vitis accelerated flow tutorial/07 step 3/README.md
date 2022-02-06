@@ -60,8 +60,39 @@ Next the linux domain has to be configured as follows:
 - For the **FAT32 partition directory**, select the sd_card folder we created
 - For the **Sysroot directory**, select the `~/workspace/vitis/boot/sdk/sysroots/cortexa72-cortexa53-xilinx-linux` folder
 
+The remaining paths below can be left as they are. 
 
+![missing file](images/03_070.png)
 
+Build the platform project.
+
+### Create the Vitis application project
+
+In the Vitis GUI, click on **File->New->Application project**
+
+The previously created platform should be selected for us:
+
+![missing file](images/03_080.png)
+
+Now choose the application name, I go for app_myir.
+
+![missing file](images/03_090.png)
+
+There should be nothing to do next, just checking the domain is linux, and the sysroot, rootfs file and kernel are the right ones
+
+![missing file](images/03_100.png)
+
+Finally, let's choose a template application, the vector addition. 
+
+![missing file](images/03_110.png)
+
+Click **Finish** and wait for the projects to appear. Then change the build mode to **Hardware** in the build icon dropdown menu:
+
+![missing file](images/03_120.png)
+
+Then build all the projects. It takes a while.
+
+### Prepare the boot SD card
 
 
 
