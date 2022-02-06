@@ -110,3 +110,16 @@ Insert an SD card in the PC, make sure it's connected to the Linux VM if you use
 sudo dd if=sd_card.img of=/dev/sdb
 ```
 
+This also takes a good while as it is copying GBs but we are now near the end.
+
+When done, it doesn't harm to have a look at the contents of each partition. In the first partition you should see the usual elements for booting linux: boot.bin, image, boot script, plus the application binary (app_myir) and the xclbin that we will use in the test.
+
+![missing file](images/03_150.png)
+
+In the second partition you should see the standard set of folders for a linux filesystem:
+
+![missing file](images/03_160.png)
+
+### Boot the board and test the application
+Insert the SD card into the MYIR board, select the boot mode as SD card, connect an USB cable to your PC and connect a terminal to it. Then power the board.
+
