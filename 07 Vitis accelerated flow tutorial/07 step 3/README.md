@@ -123,3 +123,17 @@ In the second partition you should see the standard set of folders for a linux f
 ### Boot the board and test the application
 Insert the SD card into the MYIR board, select the boot mode as SD card, connect an USB cable to your PC and connect a terminal to it. Then power the board.
 
+![missing file](images/03_170.png)
+
+When boot finishes, type the following commands to the board in the console:
+
+```
+cp /media/sd-mmcblk1p1/app_myir .
+./app_myir /media/sd-mmcblk1p1/binary_container_1.xclbin
+```
+
+![missing file](images/03_180.png)
+
+We just got the a Vitis accelerated flow application run in the MYIR board!
+
+Now you can use this tutorial to develop your owns.
