@@ -103,7 +103,61 @@ I assume the XSA file is in the `~/workspace/petalinux`  folder.
    Save and close it.
    
 4. Configure the root filesystem
+   
+   Open the file `user-rootfsconfig` in `~/workspace/petalinux/myir/project-spec/meta-user/conf` and add the following lines at the end:
+   
+   ```
+   CONFIG_xrt
+   CONFIG_dnf
+   CONFIG_e2fsprogs-resize2fs
+   CONFIG_parted
+   CONFIG_resize-part
+   CONFIG_packagegroup-petalinux-vitisai
+   CONFIG_packagegroup-petalinux-self-hosted
+   CONFIG_cmake
+   CONFIG_packagegroup-petalinux-vitisai-dev
+   CONFIG_xrt-dev
+   CONFIG_opencl-clhpp-dev
+   CONFIG_opencl-headers-dev
+   CONFIG_packagegroup-petalinux-opencv
+   CONFIG_packagegroup-petalinux-opencv-dev
+   CONFIG_mesa-megadriver
+   CONFIG_packagegroup-petalinux-x11
+   CONFIG_packagegroup-petalinux-v4lutils
+   CONFIG_packagegroup-petalinux-matchbox
+   ```
+   So it will look like this. Save it and close the editor.
+   
+   ![missing image](images/02_050.png)
+   
+   Run the following command to configure the root filesystem:
+   
+   ```
+   petalinux-config -c rootfs
+   ```
+   
+   ![missing image](images/02_060.png)
+   
+   - Navigate to **user packages** and enable all of them
+   
+     ![missing image](images/02_070.png)
+     
+   - Navigate to **Image Features** and:
 
+     * disable **ssh-server-dropbear**
+     * enable  **ssh-server-openssh**
+     * enable  **package-management**
+     * enable  **debug-tweaks**
+
+   - Navigate to **Filesystem Packages->misc->package-group-core-ssh-dropbear** and disable **package-group-core-ssh-dropbear**
+
+   - Navigate to **Filesystem Packages->console->network->openssh** and enable: **openssh**, **openssh-sftp-server**, **openssh-sshd**, **openssh-scp**
+
+   Exit and save.
+   
+   
+   
+   
 
     
 
