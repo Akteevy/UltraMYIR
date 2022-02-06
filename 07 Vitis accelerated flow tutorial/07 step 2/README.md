@@ -155,7 +155,19 @@ I assume the XSA file is in the `~/workspace/petalinux`  folder.
 
    Exit and save.
    
+5. Build petalinux and sdk
+
+   Build the kernel, image and boot binaries with:
+   ```
+   petalinux-build
+   ```
+   Then create the sdk with:
+   ```
+   petalinux-build --sdk
+   ```
+   The last command will create `sdk.sh` in the `images/linux` folder that will be referred to in the next step.
    
+Petalinux creation is now completed. You can now proceed to <a href="https://github.com/Akteevy/UltraMYIR/tree/master/07 Vitis accelerated flow tutorial/07 step 3/">step 3</a>
    
    
 
