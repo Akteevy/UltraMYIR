@@ -1,4 +1,4 @@
-## Vivado Platform creation for Vitis accelerated flow
+## Vivado Platform creation for Vitis accelerated flow with the MYIR MYD-CZU3EG board
 After this tutorial step you will have created the XSA file for the MYIR board.
 
 The starting point is a Ubuntu 20.04 machine (real or virtual) with Xilinx tools release 2021.2 installed.
