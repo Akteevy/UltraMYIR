@@ -1,4 +1,4 @@
-## Vitis accelerated flow tutorial
+## Vitis accelerated flow tutorial with MYIR board MYD-CZU3EG
 This is a series of tutorials to show how to create a Vitis project using the Vitis accelerated flow and the MYD-CZU3EG board.
 It is divided in three steps:
 - Creation of the hardware platform with Vivado
