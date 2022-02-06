@@ -94,5 +94,19 @@ Then build all the projects. It takes a while.
 
 ### Prepare the boot SD card
 
+After the project is built a series of files appear in the `Hardware/package` folder under the system project:
 
+![missing file](images/03_130.png)
+
+The most important here is the `sd_card.img`, that contains the boot sd card image. Navigate to `app_myir_system/Hardware/package` and open a terminal there
+
+![missing file](images/03_140.png)
+
+Insert an SD card in the PC, make sure it's connected to the Linux VM if you use one and type the following command.
+
+**NOTE**: You should check first that your SD card is sdb, it may be a different letter (sdc, sdd, etc.)
+
+```
+sudo dd if=sd_card.img of=/dev/sdb
+```
 
